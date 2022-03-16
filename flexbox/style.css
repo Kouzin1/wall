@@ -69,7 +69,7 @@ nav ul {
 
 nav li {
     flex-basis: 48%;
-    margin-bottom: 0.50rem;
+    margin-bottom: 0.5rem;
 }
 
 nav li:first-child {
@@ -85,6 +85,21 @@ nav a {
     padding: 0.5rem;
     border-radius: 5px;
     text-align: center;
+    color: white;
+}
+
+#hero {
+    background-color: var(--color7);
+    text-align: center;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+#hero img {
+    max-width: 100%;
+    max-height: 454px;
 }
 
 nav li:first-child a {
@@ -99,6 +114,7 @@ nav a:hover {
 figure  {
     margin: 0 0 0.5rem 0;
     padding: 0;
+    height: 100%;
     max-height: 400px;
     overflow: hidden;
     position: relative;
@@ -129,6 +145,20 @@ figcaption a {
     padding: 1rem;
     text-decoration: none;
     color: var(--color1);
+}
+
+.stripe {
+    background-color: var(--color2);
+    color: white;
+    padding: 1rem 0 2rem 0;
+}
+
+#featured figure {
+    max-height: 650px;
+}
+
+#featured img {
+    object-position: 0;
 }
 
 .color2, .color2 a:hover{
@@ -170,6 +200,12 @@ figcaption a {
     section li, .social, address {
         flex-basis: 49.5%;
     }
+    #popular li:last-child {
+        flex-basis: 100%;
+    }
+    #popular li:last-child figure img {
+        object-position: 0 -350px;
+    }
     figure img {
         object-position: 0;
     }
@@ -184,6 +220,9 @@ figcaption a {
     }
     footer address {
         margin-top: 0;
+    }
+    header {
+        padding: 3rem;
     }
     nav ul {
         justify-content: center;
@@ -207,8 +246,11 @@ figcaption a {
     section h2 {
         margin-left: 100px;
     }
-    section li, .social {
+    section li, .social, #popular li:last-child {
         flex-basis: 32.5%;
+    }
+    #popular li:last-child figure img {
+        object-position: 0 -350px;
     }
     address {
         flex-basis: 65.5%;
@@ -236,7 +278,7 @@ figcaption a {
     margin-bottom: 3rem;
 }
 
-.missintext {
+.missiontext {
     display: block;
     line-height: 1.7;
 }
